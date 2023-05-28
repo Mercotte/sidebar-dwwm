@@ -1,10 +1,15 @@
-const sidebar = document.querySelector('.sidebar');
+const btnClose = document.querySelector('.btn-close');
+const sidebarLeft = document.querySelector('.sidebar-left');
 const toggleBtn = document.querySelector('.sidebar-toggle');
-const closeBtn = document.querySelector('.close-btn');
 
 toggleBtn.addEventListener('click', function () {
-  sidebar.classList.add('show-sidebar');
+  console.log('evenement afficher click');
+  //sidebarLeft.style.display = 'block';
+  sidebarLeft.style.visibility = 'visible';
 });
-closeBtn.addEventListener('click', function () {
-  sidebar.classList.remove('show-sidebar');
+
+btnClose.addEventListener('click', function () {
+  console.log('evenement close click');
+  //sidebarLeft.style.display = 'none';
+  sidebarLeft.style.visibility = 'hidden';
 });
